@@ -9,7 +9,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 
-const MCP_URL = process.env.CLAUDE_CODE_MCP_SERVER_URL || 'https://owen-vibeagent.vercel.app/api/local-ai/mcp';
+const MCP_URL = process.env.CLAUDE_CODE_MCP_SERVER_URL || 'https://polaris-pax.pablestudio.com/api/local-ai/mcp';
 const code = (process.argv[2] || '').trim(); // 슬래시 명령 $ARGUMENTS 의 끝 공백/개행 제거 (review #9)
 if (!code) {
   process.stderr.write('연결 코드를 인자로 전달하세요: vibeagent-connect.mjs <코드>\n');
